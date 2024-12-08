@@ -26,31 +26,32 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		71D052212D0588D200097B6D /* Exceptions for "pulsar" folder in "pulsar" target */ = {
+		71D052392D058F4F00097B6D /* Exceptions for "Sources" folder in "pulsar" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				pulsarTests/pulsarTests.swift,
+			);
 			publicHeaders = (
-				pulsar.h,
+				pulsar/pulsar.h,
 			);
 			target = 71D0520E2D0588D100097B6D /* pulsar */;
+		};
+		71D0523D2D058F5400097B6D /* Exceptions for "Sources" folder in "pulsarTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				pulsarTests/pulsarTests.swift,
+			);
+			target = 71D052182D0588D200097B6D /* pulsarTests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		71D052112D0588D100097B6D /* pulsar */ = {
+		71D052312D058F4700097B6D /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				71D052212D0588D200097B6D /* Exceptions for "pulsar" folder in "pulsar" target */,
+				71D052392D058F4F00097B6D /* Exceptions for "Sources" folder in "pulsar" target */,
+				71D0523D2D058F5400097B6D /* Exceptions for "Sources" folder in "pulsarTests" target */,
 			);
-			path = pulsar;
-			sourceTree = "<group>";
-		};
-		71D0521D2D0588D200097B6D /* pulsarTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = pulsarTests;
-			sourceTree = "<group>";
-		};
-		71D052302D058CBF00097B6D /* Sources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -78,9 +79,7 @@
 		71D052052D0588D100097B6D = {
 			isa = PBXGroup;
 			children = (
-				71D052302D058CBF00097B6D /* Sources */,
-				71D052112D0588D100097B6D /* pulsar */,
-				71D0521D2D0588D200097B6D /* pulsarTests */,
+				71D052312D058F4700097B6D /* Sources */,
 				71D052102D0588D100097B6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,8 +120,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				71D052112D0588D100097B6D /* pulsar */,
-				71D052302D058CBF00097B6D /* Sources */,
+				71D052312D058F4700097B6D /* Sources */,
 			);
 			name = pulsar;
 			packageProductDependencies = (
@@ -143,9 +141,6 @@
 			);
 			dependencies = (
 				71D0521C2D0588D200097B6D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				71D0521D2D0588D200097B6D /* pulsarTests */,
 			);
 			name = pulsarTests;
 			packageProductDependencies = (
